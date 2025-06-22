@@ -1,0 +1,6 @@
+progressbar:
+  css:
+    theme:
+      css/progressbar.css: { }
+  js:
+    js/progressbar.js: {}

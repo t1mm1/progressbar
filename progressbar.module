@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains progressbar.module.
+ */
+
+/**
+ * Implements hook_theme_suggestions_alter().
+ */
+function progressbar_theme_suggestions_progress_bar_alter(array &$suggestions, array $variables): void {
+  $suggestions = ['progressbar_custom'];
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function progressbar_page_attachments(array &$attachments): void {
+  $attachments['#attached']['library'][] = 'progressbar/progressbar';
+}
+
+/**
+ * Implements hook_theme().
+ */
+function progressbar_theme($existing, $type, $theme, $path): array {
+  return [
+    'progressbar_custom' => [
+      'variables' => [
+        'label' => NULL,
+        'percent' => NULL,
+        'message' => NULL,
+      ],
+    ],
+  ];
+}

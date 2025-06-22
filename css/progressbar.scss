@@ -1,0 +1,40 @@
+$transition: ease-in-out;
+
+.progress {
+  .progress {
+    &-label {
+      font-size: 24px;
+      transition-timing-function: $transition;
+    }
+
+    &-track {
+      width: auto;
+      height: 2px;
+      background: #eaeaea;
+
+      .progress {
+        &-bar {
+          width: 0;
+          height: inherit;
+          background: #00a1ff;
+
+          transition-property: width;
+          transition-duration: 0.5s;
+          transition-timing-function: $transition;
+        }
+      }
+    }
+
+    &-percentage {
+      font-size: 24px;
+      font-weight: bold;
+      transition-timing-function: $transition;
+    }
+
+    &-description {
+      font-size: 10px;
+      opacity: .2;
+      transition-timing-function: $transition;
+    }
+  }
+}

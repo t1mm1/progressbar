@@ -1,0 +1,29 @@
+.progress .progress-label {
+  font-size: 24px;
+  transition-timing-function: ease-in-out;
+}
+.progress .progress-track {
+  width: auto;
+  height: 2px;
+  background: #eaeaea;
+}
+.progress .progress-track .progress-bar {
+  width: 0;
+  height: inherit;
+  background: #00a1ff;
+  transition-property: width;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.progress .progress-percentage {
+  font-size: 24px;
+  font-weight: bold;
+  transition-timing-function: ease-in-out;
+}
+.progress .progress-description {
+  font-size: 10px;
+  opacity: 0.2;
+  transition-timing-function: ease-in-out;
+}
+
+/*# sourceMappingURL=progressbar.css.map */
